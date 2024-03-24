@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "base/layout.html" %} {%load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %} lobby{% endblock %}
+  </head>
+  <body>
+    {% block content %}
+
+    <div class="flex items-center justify-center mt-10">
+      <div class="p-4 w-[700px] bg-white">
+        <section class="flex justify-center items-center">
+          <img class="w-[300px] object-cover" src={%static 'image/logo.png'%}
+          alt="image/logo.png">
+        </section>
+        <div class="text-center">
+          <div class="text-[40px] font-medium">Welcome to Mychat App</div>
+          <div class="text-[30px] font-normal">this is my project</div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
